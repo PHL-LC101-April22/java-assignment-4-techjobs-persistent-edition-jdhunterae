@@ -3,8 +3,7 @@ package org.launchcode.techjobs.persistent.models;
 import javax.persistence.*;
 
 @Entity
-public class Job{
-
+public class Job {
     @Id
     @GeneratedValue
     private int id;
