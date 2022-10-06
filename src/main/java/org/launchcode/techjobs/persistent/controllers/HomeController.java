@@ -59,9 +59,6 @@ public class HomeController {
         if (optEmployer.isPresent()) {
             Employer employer = (Employer) optEmployer.get();
             newJob.setEmployer(employer);
-        } else {
-            model.addAttribute("title", "Add Job");
-            return "add";
         }
 
         List<Skill> skillObjs = (List<Skill>) skillRepository.findAllById(skills);
